@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MI Shuvo | Software Developer</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles & Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'dark-gray': '#1a1a1a',
+                        'medium-gray': '#2a2a2a',
+                        'light-gray': '#f3f4f6',
+                        'accent': '#2dd4bf',
+                        'accent-hover': '#5eead4',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom scrollbar for a more polished look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1a1a1a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #4a4a4a;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #5a5a5a;
+        }
+    </style>
+</head>
+<body class="bg-dark-gray text-light-gray font-sans antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="bg-dark-gray/80 backdrop-blur-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white hover:text-accent transition-colors">JD</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="hover:text-accent transition-colors">About</a>
+                <a href="#projects" class="hover:text-accent transition-colors">Projects</a>
+                <a href="#contact" class="hover:text-accent transition-colors">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#about" class="block py-2 px-6 hover:bg-medium-gray">About</a>
+            <a href="#projects" class="block py-2 px-6 hover:bg-medium-gray">Projects</a>
+            <a href="#contact" class="block py-2 px-6 hover:bg-medium-gray">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6">
+
+        <!-- Hero Section -->
+        <section id="home" class="py-20 md:py-32 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight">Md. Mohibul Islam Shuvo </h1>
+                <p class="text-xl md:text-2xl text-accent mt-2">Software Developer & Tech Enthusiast</p>
+                <p class="mt-4 text-lg text-gray-400 max-w-xl mx-auto md:mx-0">
+                    Crafting elegant solutions to complex problems. Passionate about building scalable web applications and exploring new technologies.
+                </p>
+                <div class="mt-8 flex justify-center md:justify-start space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-accent transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-accent transition-colors">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-accent transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center mt-10 md:mt-0">
+                <img src="https://placehold.co/400x400/2a2a2a/f3f4f6?text=JD" alt="John Doe Portrait" class="rounded-full shadow-2xl shadow-black/50 w-64 h-64 md:w-80 md:h-80 object-cover">
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20">
+            <h2 class="text-3xl font-bold text-center text-white">About Me</h2>
+            <div class="mt-12 flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-2/3">
+                    <p class="text-lg text-gray-400 mb-4">
+                        Hello! I'm Shuvo, a developer with a deep passion for building beautiful and functional web applications. My journey into tech started with a simple "Hello, World!" and has since grown into a full-fledged obsession with clean code, user-centric design, and scalable architecture.
+                    </p>
+                    <p class="text-lg text-gray-400">
+                        I thrive on challenges and am constantly learning new technologies to stay at the forefront of the ever-evolving world of software development. When I'm not coding, you can find me exploring hiking trails or diving into a good sci-fi novel.
+                    </p>
+                </div>
+                <div class="md:w-1/3">
+                    <h3 class="text-xl font-semibold text-white mb-4">Core Skills</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-medium-gray text-accent text-sm font-medium px-3 py-1 rounded-full">JavaScript</span>
+                        <span class="bg-medium-gray text-accent text-sm font-medium px-3 py-1 rounded-full">React</span>
+                        <span class="bg-medium-gray text-accent text-sm font-medium px-3 py-1 rounded-full">Node.js</span>
+                        <span class="bg-medium-gray text-accent text-sm font-medium px-3 py-1 rounded-full">Python</span>
+                        <span class="bg-medium-gray text-accent text-sm font-medium px-3 py-1 rounded-full">SQL</span>
+                        <span class="bg-medium-gray text-accent text-sm font-medium px-3 py-1 rounded-full">Docker</span>
+                        <span class="bg-medium-gray text-accent text-sm font-medium px-3 py-1 rounded-full">Tailwind CSS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20">
+            <h2 class="text-3xl font-bold text-center text-white">My Projects</h2>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Project Card 1 -->
+                <div class="bg-medium-gray rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 shadow-lg">
+                    <img src="https://placehold.co/600x400/1a1a1a/2dd4bf?text=Project+One" alt="Project One" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white">E-Commerce Platform</h3>
+                        <p class="mt-2 text-gray-400">A full-stack e-commerce site built with React, Node.js, and PostgreSQL, featuring product search, cart functionality, and user authentication.</p>
+                        <div class="mt-4 flex space-x-4">
+                            <a href="#" class="text-accent hover:text-accent-hover font-semibold">Live Demo</a>
+                            <a href="#" class="text-gray-400 hover:text-white">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="bg-medium-gray rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 shadow-lg">
+                    <img src="https://placehold.co/600x400/1a1a1a/2dd4bf?text=Project+Two" alt="Project Two" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white">Data Visualization Dashboard</h3>
+                        <p class="mt-2 text-gray-400">An interactive dashboard using D3.js and Python (Flask) to visualize real-time stock market data through various charts and graphs.</p>
+                        <div class="mt-4 flex space-x-4">
+                            <a href="#" class="text-accent hover:text-accent-hover font-semibold">Live Demo</a>
+                            <a href="#" class="text-gray-400 hover:text-white">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="bg-medium-gray rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 shadow-lg">
+                    <img src="https://placehold.co/600x400/1a1a1a/2dd4bf?text=Project+Three" alt="Project Three" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white">Task Management App</h3>
+                        <p class="mt-2 text-gray-400">A sleek and responsive task manager app with drag-and-drop functionality, built with Vue.js and Firebase for real-time data syncing.</p>
+                        <div class="mt-4 flex space-x-4">
+                            <a href="#" class="text-accent hover:text-accent-hover font-semibold">Live Demo</a>
+                            <a href="#" class="text-gray-400 hover:text-white">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 text-center">
+            <h2 class="text-3xl font-bold text-white">Get In Touch</h2>
+            <p class="mt-4 text-lg text-gray-400 max-w-2xl mx-auto">
+                I'm currently open to new opportunities and collaborations. Feel free to reach out if you have a project in mind or just want to connect!
+            </p>
+            <div class="mt-8">
+                <a href="mailto:johndoe@example.com" class="bg-accent text-dark-gray font-bold py-3 px-6 rounded-lg hover:bg-accent-hover transition-colors text-lg">
+                    Say Hello
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-medium-gray">
+        <div class="container mx-auto px-6 py-4 text-center text-gray-500">
+            <p>&copy; 2025 Shuvo. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for (let link of mobileMenuLinks) {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        }
+    </script>
+
+</body>
+</html>
